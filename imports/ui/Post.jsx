@@ -27,7 +27,7 @@ export default class Post extends Component {
         createdAt: new Date(),
         }
       });
-      this.setState({...data})
+      this.setState({caption: data.captionText})
   }
 
 
@@ -39,7 +39,7 @@ export default class Post extends Component {
     return (
       <div className="posts-box" style={divStyle}>
         { Meteor.user() ?
-          <button className="btn btn-primary btn-xs" onClick={this.deletePost.bind(this)}>
+          <button className="btn btn-primary btn-xs pull-right" onClick={this.deletePost.bind(this)}>
             <i className="fa fa-trash-o"></i>
           </button> : ''
         }
@@ -53,11 +53,11 @@ export default class Post extends Component {
               change={this.updatePost}
             />
             <br/>
-            {this.state.username}
+            <span className="caption-user">{this.state.username}</span>
             </div> :
             <div className="caption-text">
-            {this.state.caption}<br/>
-            <span>{this.state.username}</span>
+            <span className="caption-ed">{this.state.caption}</span><br/>
+            <span className="caption-user">{this.state.username}</span>
             </div>
             }
         </div>

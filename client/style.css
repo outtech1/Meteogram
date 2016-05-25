@@ -28,7 +28,6 @@ body {
 .logo{
   font-size: 3rem;
   font-family: 'Oleo Script', cursive;
-
 }
 
 .logo-img{
@@ -53,6 +52,10 @@ nav {
 .footer-text {
   margin: 1rem;
   font-size: 1rem;
+}
+
+.footer-text a:link, .footer-text a:visited{
+  color: #FFFFFF;
 }
 
 .content{
@@ -91,9 +94,11 @@ nav {
 }
 
 .posts-box {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   position: relative;
   background-color: #D3D3D3;
-  background-size: 100% 95%;
+  background-size: 100%;
   height: 500px;
 }
 
@@ -112,7 +117,7 @@ nav {
 }
 
 .new-post {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .update-link {
@@ -135,4 +140,18 @@ nav {
 
 .input-div {
   margin-top: 2rem;
+}
+
+.home-hero {
+  margin-top: 5rem;
+  text-align:center;
+}
+
+.meteogram {
+  font-family: 'Oleo Script', cursive;
+}
+
+.caption-user {
+  font-weight: bolder;
+  font-size: 1.3rem;
 }

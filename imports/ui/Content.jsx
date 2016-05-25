@@ -44,7 +44,7 @@ export default class Content extends Component {
             <li><a href="/">Home</a></li>
             <li className="active">{this.props.currentUser.username}'s Posts</li>
           </ol>
-          { Meteor.user() ?
+          { this.props.currentUser ?
             <div className="update-link">
               <a href={'/update/'+this.props.currentUser.username}> Update Account </a>
             </div> : ''
@@ -74,8 +74,9 @@ export default class Content extends Component {
             </div>
           </form>
           </div> :
-          <div>
-            Welcome to Meteogram!
+          <div className="home-hero">
+            <h1>Welcome to <span className="meteogram">Meteogram!</span></h1>
+            <h4>Instagram for Meteors</h4>
           </div>
         }
         {this.renderPosts()}
