@@ -38,13 +38,13 @@ export default class Post extends Component {
     }
     return (
       <div className="posts-box" style={divStyle}>
-        { Meteor.user() ?
+        { this.props.post.username == Meteor.user().username ?
           <button className="btn btn-primary btn-xs pull-right" onClick={this.deletePost.bind(this)}>
             <i className="fa fa-trash-o"></i>
           </button> : ''
         }
         <div className="caption-box">
-          { Meteor.user() ?
+          { this.props.post.username == Meteor.user().username ?
             <div>
             <InlineEdit
               activeClassName="editing"
@@ -53,11 +53,11 @@ export default class Post extends Component {
               change={this.updatePost}
             />
             <br/>
-            <span className="caption-user">{this.state.username}</span>
+            <span className="caption-user">{'@'+this.state.username}</span>
             </div> :
             <div className="caption-text">
             <span className="caption-ed">{this.state.caption}</span><br/>
-            <span className="caption-user">{this.state.username}</span>
+            <span className="caption-user">{'@'+this.state.username}</span>
             </div>
             }
         </div>

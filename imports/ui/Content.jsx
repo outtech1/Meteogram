@@ -51,7 +51,7 @@ export default class Content extends Component {
           }
           <form className="new-post" onSubmit={this.handleSubmit.bind(this)}>
             <div className="form-group">
-              <label>Post a Meteogram:</label>
+              <label className="label-post">Post a Meteogram:</label>
               <input
                 className="caption"
                 type="text"
@@ -64,12 +64,13 @@ export default class Content extends Component {
                 type="text"
                 ref="urlInput"
                 placeholder="Image Url"
+                required
                 />
               <span> or </span>
-              <button name="upload" type="button" className="btn btn-primary">Upload</button>
+              <button name="upload" type="button" className="btn btn-default">Upload</button>
               </div>
               <div className="submit-btn">
-                <button type="submit" className="btn btn-default">Post</button>
+                <button type="submit" className="btn btn-primary">Post</button>
               </div>
             </div>
           </form>

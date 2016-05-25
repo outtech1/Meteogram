@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oleo+Script);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #315481;
@@ -105,7 +106,7 @@ nav {
 .caption-box {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   color: #FFFFFF;
   height: 10%;
   width: 100%;
@@ -144,6 +145,7 @@ nav {
 
 .home-hero {
   margin-top: 5rem;
+  margin-bottom: 5rem;
   text-align:center;
 }
 
@@ -153,5 +155,9 @@ nav {
 
 .caption-user {
   font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.label-post{
   font-size: 1.3rem;
 }
