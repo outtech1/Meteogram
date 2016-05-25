@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #0A5A9C, #94C3EA 100%);
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+.logo{
+  font-size: 3rem;
+  font-family: 'Oleo Script', cursive;
+
+}
+
+.logo-img{
+  max-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.footer {
+  background-color: #428bca;
+  color: #FFFFFF;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 50px;
+}
+
+.footer-text {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.content{
+  min-height:800px;
+}
+
+.caption {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.img-url {
+  margin-top: 2rem;
+}
+
+.img-url input{
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 82%;
+  font-size: 1.5rem;
+}
+
+.sign-in {
+  padding-top: 2.3rem;
+}
+
+.submit-btn {
+  padding-top: 2rem;
+}
+
+.breadcrumb {
+  padding: 8px 0;
+  background-color: #FFFFFF;
+}
+
+.posts-box {
+  position: relative;
+  background-color: #D3D3D3;
+  background-size: 100% 95%;
+  height: 500px;
+}
+
+.caption-box {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.editing {
+  color: #000000;
+}
+
+.new-post {
+  margin-top: 8rem;
+}
+
+.update-link {
+  margin: -8rem 1.5rem 1rem 0;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.user-update {
+  margin-top: 10rem;
+  min-height:800px;
+}
+
+.update-input input {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.input-div {
+  margin-top: 2rem;
+}
